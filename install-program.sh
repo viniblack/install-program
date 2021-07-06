@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GREEN='\033[0;32m'
+GREEN='\033[0;32m' 
 
 ## Removendo travas eventuais do apt ##
 
