@@ -41,7 +41,10 @@ cd /home/$USER/Download/programas
 ## Baixando o teams ##
 wget -c https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb
 
-## Instalando os programas baixados ##
+## Baixando o chrome ##
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+## Instalando todos os programas .deb ##
 
 sudo dpkg -i *.deb &&
 
