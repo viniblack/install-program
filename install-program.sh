@@ -20,7 +20,7 @@ sudo apt install git -y &&
 
 echo "${GREEN} instalou git"
 
-sudo apt install php5-common libapache2-mod-php5 php5-cli -y &&
+sudo apt install php libapache2-mod-php -y &&
 
 echo "${GREEN} instalou php"
 
