@@ -1,26 +1,28 @@
 #!/bin/bash
 
+GREEN='\033[0;32m'
+
 ## Removendo travas eventuais do apt ##
 
 sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 
-echo "removeu travas"
+echo "${GREEN} removeu travas"
 
 ## Atualizando o repositório ##
 
 sudo apt update && 
 
-echo "atualizou repositórios"
+echo "${GREEN} atualizou repositórios"
 
 ## Instalando pacotes e programas do repositório deb do Ubuntu ##
 
 sudo apt install git -y &&
 
-echo "instalou git"
+echo "${GREEN} instalou git"
 
 sudo apt install php5-common libapache2-mod-php5 php5-cli -y &&
 
-echo "instalou php"
+echo "${GREEN} instalou php"
 
 ## Instalando pacotes Snap ##
 
@@ -28,7 +30,7 @@ sudo apt install snap
 
 sudo snap install code --classic &&
 
-echo "instalou vscode"
+echo "${GREEN} instalou vscode"
 
 ## Instalando teams ##
 
@@ -47,7 +49,7 @@ sudo dpkg -i *.deb &&
 
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
-echo "atualizou o sistema"
+echo "${GREEN} atualizou o sistema"
 
 #Fim do Script ##
 
